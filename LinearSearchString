@@ -1,0 +1,21 @@
+public class LinearSearchString {
+    public static void main(String[] args) {
+        
+        String[] nama = {"Andi", "Budi", "Citra", "Dewi", "Eka"};
+        String cari = "Budi";
+        int posisi = -1;
+
+        for (int i = 0; i < nama.length; i++) {
+            if (nama[i].equalsIgnoreCase(cari)) {
+                posisi = i;
+                break;
+            }
+        } 
+
+        if (posisi != -1) {
+            System.out.println("Nama ditemukan pada indeks ke-" + posisi);
+        } else {
+            System.out.println("Nama tidak ditemukan");
+        }
+    }
+}
